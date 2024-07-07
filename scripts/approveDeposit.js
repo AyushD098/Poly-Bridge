@@ -2,7 +2,7 @@ const { ethers } = require("hardhat");
 const { FXRootContractAbi } = require("../FXRootContractAbi.js");
 require('dotenv').config();
 const {nftAddress} = require("../contractAddress.js");
-const fxRootAddress = '0xF9bc4a80464E48369303196645e876c8C7D972de';
+const fxRootAddress = '0x9E688939Cb5d484e401933D850207D6750852053';
 const networkAddress = 'https://eth-sepolia.g.alchemy.com/v2/Z4lhJgtAqbTSLA3fVe6Anw8SZbX-gOF8';
 const privateKey = process.env.PRIVATE_KEY;
 const provider = new ethers.providers.JsonRpcProvider(networkAddress);
