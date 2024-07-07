@@ -4,7 +4,7 @@
 
 ## Overview
 
-This project involves creating a 5-item NFT collection using AI image generation tools (DALLE 2 or Midjourney), storing these items on IPFS using Pinata, and deploying an ERC721 or ERC1155 contract on the Goerli Ethereum Testnet. The project also includes mapping the NFT collection on the Polygon network, batch minting the NFTs, and transferring them to Polygon Mumbai using the FxPortal Bridge.
+This project involves creating a 5-item NFT collection using AI image generation tools (DALLE 2 or Midjourney), storing these items on IPFS using Pinata, and deploying an ERC721 or ERC1155 contract on the sepolia Ethereum Testnet. The project also includes mapping the NFT collection on the Polygon network, batch minting the NFTs, and transferring them to Polygon amoy using the FxPortal Bridge.
 
 ## Project Requirements
 
@@ -20,7 +20,7 @@ This project involves creating a 5-item NFT collection using AI image generation
 ### Smart Contract Deployment
 
 3. **Deploy Contract:**
-   - Deploy an ERC721 or ERC1155 contract on the Goerli Ethereum Testnet.
+   - Deploy an ERC721 or ERC1155 contract on the sepolia Ethereum Testnet.
    - Include a `promptDescription` function that returns the prompt used to generate the images.
 
 4. **Map NFT Collection:**
@@ -32,7 +32,7 @@ This project involves creating a 5-item NFT collection using AI image generation
    - Write a Hardhat script to batch mint all NFTs. Using ERC721A is recommended for this task.
 
 6. **Batch Transfer NFTs:**
-   - Write a Hardhat script to batch transfer all NFTs from Ethereum to Polygon Mumbai using the FxPortal Bridge.
+   - Write a Hardhat script to batch transfer all NFTs from Ethereum to Polygon amoy using the FxPortal Bridge.
 
 ### Approve and Transfer NFTs
 
@@ -45,7 +45,7 @@ This project involves creating a 5-item NFT collection using AI image generation
 ### Test
 
 9. **Test Balance:**
-   - Verify the balance of the NFTs on the Mumbai network.
+   - Verify the balance of the NFTs on the amoy network.
 
 ## Installation
 
@@ -62,8 +62,8 @@ This project involves creating a 5-item NFT collection using AI image generation
 
 3. Set up environment variables by creating a `.env` file in the root directory with the following:
     ```bash
-    GOERLI_RPC_URL=<Your Goerli RPC URL>
-    POLYGON_MUMBAI_RPC_URL=<Your Polygon Mumbai RPC URL>
+    sepolia_RPC_URL=<Your sepolia RPC URL>
+    POLYGON_amoy_RPC_URL=<Your Polygon amoy RPC URL>
     PRIVATE_KEY=<Your Private Key>
     PINATA_API_KEY=<Your Pinata API Key>
     PINATA_SECRET_API_KEY=<Your Pinata Secret API Key>
@@ -102,18 +102,18 @@ This project involves creating a 5-item NFT collection using AI image generation
     npx hardhat run scripts/depositNFTs.js 
     ```
 
-3. Test balance on Mumbai:
+3. Test balance on amoy:
     ```bash
     npx hardhat run scripts/testBalance.js 
     ```
 
 ## Scripts
 
-- `deploy.js`: Deploys the NFT contract to the Goerli Testnet.
+- `deploy.js`: Deploys the NFT contract to the sepolia Testnet.
 - `batchMint.js`: Batch mints all NFTs.
 - `approveNFTs.js`: Approves the NFTs for transfer.
 - `depositNFTs.js`: Deposits the NFTs to the FxPortal Bridge.
-- `testBalance.js`: Checks the balance of NFTs on the Mumbai network.
+- `testBalance.js`: Checks the balance of NFTs on the amoy network.
 
 ## Additional Resources
 
